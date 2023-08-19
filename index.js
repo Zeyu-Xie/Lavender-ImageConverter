@@ -56,3 +56,5 @@ function blobToBase64(blob) {
         reader.readAsDataURL(blob);
     });
 }
+
+export { urlToBlob, base64ToBlob, formDataToBlob, blobToBase64, blobToFormData, blobToUrl }
