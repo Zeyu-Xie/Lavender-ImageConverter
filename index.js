@@ -34,9 +34,9 @@ function blobToUrl(blob) {
     return URL.createObjectURL(blob);
 }
 
-function blobToFormData(blob, fileName, contentType) {
+function blobToFormData(blob) {
     const formData = new FormData();
-    formData.append("file", blob, fileName);
+    formData.append("file", blob);
     return formData;
 }
 
