@@ -40,12 +40,12 @@ const blob = formDataToBlob(formData);
 const url = blobToUrl(blob);
 ```
 
-### `blobToFormData(blob, fileName, contentType)`
+### `blobToFormData(blob)`
 
-此函数接受一个Blob对象（`blob`）、一个文件名（`fileName`）和一个可选的内容类型（`contentType`）作为参数。它创建一个FormData对象，将Blob与指定的文件名附加到其中，并返回FormData对象。
+此函数接受一个Blob对象作为参数。它创建一个FormData对象，将Blob附加到其中的"file"字段，并返回FormData对象。
 
 ```javascript
-const formData = blobToFormData(blob, fileName, contentType);
+const formData = blobToFormData(blob);
 ```
 
 ### `blobToBase64(blob)`
@@ -112,12 +112,12 @@ This function takes a Blob object (`blob`) as a parameter and creates a temporar
 const url = blobToUrl(blob);
 ```
 
-### `blobToFormData(blob, fileName, contentType)`
+### `blobToFormData(blob)`
 
-This function takes a Blob object (`blob`), a file name (`fileName`), and an optional content type (`contentType`) as parameters. It creates a FormData object, appends the Blob with the specified file name, and returns the FormData object.
+This function takes a Blob object as a parameter. It creates a FormData object, attaches the Blob to the "file" field within it, and returns the FormData object.
 
 ```javascript
-const formData = blobToFormData(blob, fileName, contentType);
+const formData = blobToFormData(blob);
 ```
 
 ### `blobToBase64(blob)`
